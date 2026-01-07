@@ -1,7 +1,7 @@
 import math
 from scipy.stats import norm
 
-RISK_FREE_RATE = 0.07 
+RISK_FREE_RATE = 0.0525
 
 def bs_price(S, K, T, sigma, r=RISK_FREE_RATE):
     d1 = (math.log(S / K) + (r + 0.5 * sigma**2) * T) / (sigma * math.sqrt(T))
